@@ -1,4 +1,4 @@
-mmd-production-f8e9.up.railway.app {
+:{$PORT} {
     reverse_proxy /ws* http://172.245.180.219:2028
     reverse_proxy /trojan* http://172.245.180.219:2029
     reverse_proxy /vmess* http://172.245.180.219:2030
