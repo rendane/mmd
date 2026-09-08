@@ -1,21 +1,6 @@
 mmd-production-f8e9.up.railway.app {
-    # مسیر VLESS قبلی
-    handle_path /ws* {
-        reverse_proxy http://172.245.180.219:2028
-    }
-
-    # مسیر Trojan
-    handle_path /trojan* {
-        reverse_proxy http://172.245.180.219:2029
-    }
-
-    # مسیر VMess
-    handle_path /vmess* {
-        reverse_proxy http://172.245.180.219:2030
-    }
-
-    # مسیر Shadowsocks
-    handle_path /ss* {
-        reverse_proxy http://172.245.180.219:2031
-    }
+    reverse_proxy /ws* http://172.245.180.219:2028
+    reverse_proxy /trojan* http://172.245.180.219:2029
+    reverse_proxy /vmess* http://172.245.180.219:2030
+    reverse_proxy /ss* http://172.245.180.219:2031
 }
