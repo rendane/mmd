@@ -1,3 +1,21 @@
-:{$PORT} {
-    reverse_proxy http://172.245.180.219:2028
+mmd-production-f8e9.up.railway.app {
+    # مسیر VLESS قبلی
+    handle_path /ws* {
+        reverse_proxy http://172.245.180.219:2028
+    }
+
+    # مسیر Trojan
+    handle_path /trojan* {
+        reverse_proxy http://172.245.180.219:2029
+    }
+
+    # مسیر VMess
+    handle_path /vmess* {
+        reverse_proxy http://172.245.180.219:2030
+    }
+
+    # مسیر Shadowsocks
+    handle_path /ss* {
+        reverse_proxy http://172.245.180.219:2031
+    }
 }
