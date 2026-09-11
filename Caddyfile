@@ -1,6 +1,6 @@
 :{$PORT} {
-    reverse_proxy /wss* http://172.245.180.219:2032
-    reverse_proxy /trojans* http://172.245.180.219:2033
-    reverse_proxy /vmesss* http://172.245.180.219:2034
-    reverse_proxy /sss* http://172.245.180.219:2035
+    reverse_proxy /wss* http://172.245.180.219:2028
+    reverse_proxy /trojans* http://172.245.180.219:2029
+    reverse_proxy /vmesss* http://172.245.180.219:2030
+    reverse_proxy /sss* http://172.245.180.219:2031
 }
